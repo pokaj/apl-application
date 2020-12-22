@@ -1,4 +1,40 @@
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+
+const User = require('../models/user')
+
+
+exports.signup = async (req, res) => {
+    const existingUser = await User.findOne({email: req.body.email})
+    if(existingUser !== null){
+        return res.status(409).json({message: 'A user with this email already exists'});
+    }else {
+        bcrypt.hash(req.body.password, 10, async(error, hash)=> {
+            if(error){
+                return res.status(500).json({error:error});
+            }else {
+                try{
+                    const newUser = new User({
+                        _id: new mongoose.Types.ObjectId(),
+                        name: req.body.name,
+                        email: req.body.email,
+                        age: req.body.age,
+                        position: req.body.position,
+                        image: req.body.image,
+                        password: hash
+                    })
+                    await newUser.save();
+                    return res.status(201).json(newUser)
+                }
+                catch (error) {
+                    console.log(error);
+                    return res.status(500).json(error)
+                }
+            }
+        })
+    }
+}
+
 
 exports.login = async (req, res)=>{
     const user = await User.findOne({email:req.body.email})

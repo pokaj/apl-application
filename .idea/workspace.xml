@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3610501f-567a-47a1-b042-e86154657a13" name="Default Changelist" comment="" />
+    <list default="true" id="3610501f-567a-47a1-b042-e86154657a13" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lOzsS04Waq3cbCeM8DM56TWPnu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,6 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,7 +46,10 @@
       <workItem from="1607515554056" duration="1404000" />
       <workItem from="1607597895211" duration="7314000" />
       <workItem from="1607674903087" duration="7977000" />
-      <workItem from="1607942521529" duration="6279000" />
+      <workItem from="1607942521529" duration="6599000" />
+      <workItem from="1608300982022" duration="3128000" />
+      <workItem from="1608398301319" duration="6643000" />
+      <workItem from="1608628056958" duration="2147000" />
     </task>
     <servers />
   </component>
@@ -60,5 +66,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

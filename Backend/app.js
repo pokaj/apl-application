@@ -8,7 +8,6 @@ const connectDb = require('./database/db');
 const userRoutes = require('./api/routes/user');
 const adminRoutes = require('./api/routes/admin');
 const coachRoutes = require('./api/routes/coach');
-const playerRoutes = require('./api/routes/player');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -20,6 +19,5 @@ connectDb();
 app.use('/api/user/', userRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/coach', coachRoutes);
-app.use('/api/player', playerRoutes);
 
 module.exports = app
